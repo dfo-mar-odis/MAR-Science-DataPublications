@@ -1,0 +1,59 @@
+---
+title: "Data Publications - Science - Maritimes Region"
+date: "`r Sys.Date()`"
+author: Brian Bower 
+output:
+  rmdformats::robobook:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# requires R package `rmdformats`
+```
+
+# Why Publish Data to the Open Government Platforms
+
+- Open Government data publication has been a Directive within DFO since 2014.
+
+- The Open Government platforms are intended to provide users with easy access to authoritative data sources.
+
+- Making data open improves and promotes communication, collaboration, decision making, and general efficiency.
+
+# Open Government Platforms
+
+- Marine Spatial Data Infrastructure (MSDI): Only accessible to DFO employees.
+
+- Federal Geospatial Platform (FGP): Only accessible to federal and provincial government employees.
+
+- Open Government Portal: Open Data
+
+# Typical Flexible Publication Process 
+
+Minimum requirement for Open Data publication is general description of the data and GIS compatible datasets.
+
+Your Maritimes Region Open Data technician (Brian Bower) and your Division Data Manager can help with the rest!
+
+- Provide data and metadata to ODIS
+- ODIS coordinates with teams to build GIS package
+- ODIS Coordinates Publication with IMTS
+
+# List of Publications
+
+
+```{r}
+#library(readxl)
+#read_excel('https://086gc.sharepoint.com/sites/MaritimesSpatialPlanning-MAROpenDataLogistics/Shared%20Documents/MAR%20OpenData%20Logistics/OpenData-Publications/MaritimesFGP_InventoryBrianBower_All.xlsx', 'FGP')
+```
+
+
+
+
+
+
+
+
