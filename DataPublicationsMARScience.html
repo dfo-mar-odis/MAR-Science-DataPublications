@@ -9,7 +9,7 @@
     
         <meta name="date" content="2022-09-02" />
     
-    <title>*Data Publications - Science - Maritimes Region</title>
+    <title>Data Publications - Science - Maritimes Region</title>
 
         <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1832,7 +1832,7 @@ src: url(data:application/font-sfnt;base64,AAEAAAARAQAABAAQR0RFRgs+Cz8AAjwQAAAAQ
    <div class="book with-summary">
       <div class="book-summary">
         <ul>
-          <li class="title">*Data Publications - Science - Maritimes
+          <li class="title">Data Publications - Science - Maritimes
 Region</li>
           <li class="divider"></li>
         </ul>
@@ -1844,7 +1844,11 @@ Region</li>
           Platforms</a></li>
           <li><a href="#typical-flexible-publication-process" id="toc-typical-flexible-publication-process">Typical Flexible
           Publication Process</a></li>
-          <li><a href="#list-of-publications" id="toc-list-of-publications">List of Publications</a></li>
+          <li><a href="#list-of-publications" id="toc-list-of-publications">List of Publications</a>
+          <ul>
+          <li><a href="#internal-egis-data" id="toc-internal-egis-data">Internal eGIS Data</a></li>
+          <li><a href="#fgp" id="toc-fgp">FGP</a></li>
+          </ul></li>
           </ul>
         </nav>
         <ul class="authors">
@@ -1864,7 +1868,7 @@ Bower</span></li>
       
    
         
-      <h1 class="title">*Data Publications - Science - Maritimes
+      <h1 class="title">Data Publications - Science - Maritimes
 Region</h1>
       
         
@@ -1908,8 +1912,1605 @@ Division Data Manager can help with the rest!</p>
 </div>
 <div id="list-of-publications" class="section level1">
 <h1>List of Publications</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(readxl)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#read_excel(&#39;https://086gc.sharepoint.com/sites/MaritimesSpatialPlanning-MAROpenDataLogistics/Shared%20Documents/MAR%20OpenData%20Logistics/OpenData-Publications/MaritimesFGP_InventoryBrianBower_All.xlsx&#39;, &#39;FGP&#39;)</span></span></code></pre></div>
+<div id="internal-egis-data" class="section level2">
+<h2>Internal eGIS Data</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(eGIS[, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+eGIS Publication Name
+</th>
+<th style="text-align:left;">
+REST URL
+</th>
+<th style="text-align:left;">
+eGIS URL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Atlantic Salmon Rivers of Eastern North America Internal
+</td>
+<td style="text-align:left;">
+<a href="https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/SpatialReproducibleReporting/Atlantic_Salmon_Rivers_of_Eastern_North_America/MapServer" class="uri">https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/SpatialReproducibleReporting/Atlantic_Salmon_Rivers_of_Eastern_North_America/MapServer</a>
+</td>
+<td style="text-align:left;">
+<a href="https://gisd.dfo-mpo.gc.ca/portal/home/webmap/viewer.html?webmap=eed6dd1d26354b6f83235032b89ac576&amp;extent=-90.5173,42.4289,-38.7058,57.8954" class="uri">https://gisd.dfo-mpo.gc.ca/portal/home/webmap/viewer.html?webmap=eed6dd1d26354b6f83235032b89ac576&amp;extent=-90.5173,42.4289,-38.7058,57.8954</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAPPING INTERTIDAL VEGETATION AND ROCKWEED PRESENCE IN MARITIMES
+</td>
+<td style="text-align:left;">
+<a href="https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/FGP/MARboundary_Rockweed_Presence_validated/MapServer" class="uri">https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/FGP/MARboundary_Rockweed_Presence_validated/MapServer</a>
+</td>
+<td style="text-align:left;">
+<a href="https://gisd.dfo-mpo.gc.ca/portal/home/webmap/viewer.html?webmap=cbf26467bce84abc972a04e88581a030&amp;extent=-69.943,43.029,-56.9901,47.3316" class="uri">https://gisd.dfo-mpo.gc.ca/portal/home/webmap/viewer.html?webmap=cbf26467bce84abc972a04e88581a030&amp;extent=-69.943,43.029,-56.9901,47.3316</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Whale Sightings Database (WSDB)
+</td>
+<td style="text-align:left;">
+<a href="https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/SpatialReproducibleReporting/Map/MapServer" class="uri">https://gisd.dfo-mpo.gc.ca/arcgis/rest/services/SpatialReproducibleReporting/Map/MapServer</a>
+</td>
+<td style="text-align:left;">
+Whale Sightings Database (WSDB) (dfo-mpo.gc.ca)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fgp" class="section level2">
+<h2>FGP</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(FGPdata[, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>])</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+FGP Records
+</th>
+<th style="text-align:left;">
+Status
+</th>
+<th style="text-align:left;">
+Notes
+</th>
+<th style="text-align:left;">
+FGP URL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Bluefin Tuna in Area Response Planning Pilot
+Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0c3b25df-f831-43e8-a8ac-336e1467c4fe?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0c3b25df-f831-43e8-a8ac-336e1467c4fe?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Bottlenose Whales in Area Response Planning
+Pilot Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/29dd835b-7c96-4c62-b558-275dfe13cbe9" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/29dd835b-7c96-4c62-b558-275dfe13cbe9</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Atlantic Cod in Area Response Planning Pilot
+Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of North Atlantic Right whales in Area Response
+Planning Pilot Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d159ac68-6e46-44b5-a4e9-951880892c63?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d159ac68-6e46-44b5-a4e9-951880892c63?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Finback whales in Area Response Planning Pilot
+Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7e2f85b3-19eb-4ecf-8557-69c8df1bc084?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7e2f85b3-19eb-4ecf-8557-69c8df1bc084?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_Halibut.mxd
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e027bd70-2de3-4592-b060-ae62e7c5225a?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e027bd70-2de3-4592-b060-ae62e7c5225a?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Harbour Porpoises in Area Response Planning
+Pilot Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/58ea48ab-f052-48ab-9c18-4353e51b8bea?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/58ea48ab-f052-48ab-9c18-4353e51b8bea?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Harbour Seals in Area Response Planning Pilot
+Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5bbc1575-4267-44fa-ae35-ee08cc2af8fb?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5bbc1575-4267-44fa-ae35-ee08cc2af8fb?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_Leatherback_Turtles.mxd
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6078cd1a-bcc1-4166-a983-3acd870f832c?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6078cd1a-bcc1-4166-a983-3acd870f832c?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_Lobster.mxd
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/47bf4555-ce3c-492f-a367-a6eab1862970?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/47bf4555-ce3c-492f-a367-a6eab1862970?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_Scallops.mxd
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/02291151-d580-4c8a-b0d8-3ccb53ac2b20?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/02291151-d580-4c8a-b0d8-3ccb53ac2b20?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Snow Crab in Area Response Planning Pilot
+Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/edb15c7b-d901-46b0-a460-1aca22c013ea?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/edb15c7b-d901-46b0-a460-1aca22c013ea?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Soft Shelled Clams in Area Response Planning
+Pilot Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/59121e8f-0acc-411a-99cb-54980df10ba6?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/59121e8f-0acc-411a-99cb-54980df10ba6?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Grey Seal in Area Response Planning Pilot
+Areas.
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_WinterFlounder.mxd
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7527e94a-3428-4948-aeb7-7fbd227d4db2?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7527e94a-3428-4948-aeb7-7fbd227d4db2?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Likelihood of Presence of Atlantic Salmon in Area Response Planning
+Pilot Areas
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/436cdf90-9d6b-4784-938b-feec48844a67?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/436cdf90-9d6b-4784-938b-feec48844a67?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceansProtectionPlan_AreaResponsePlan_MAR_SpeciesPresence_SalmonRivers.mxd
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ded53eaa-bb98-4476-beea-3138372c740b?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ded53eaa-bb98-4476-beea-3138372c740b?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Oceans Protection Plan RRP Extents
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/f32ce23d-4a16-4eaa-9648-2f02a98b91af" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/f32ce23d-4a16-4eaa-9648-2f02a98b91af</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video
+Shippagan 2007
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6454594e-c8f9-41c4-801a-db125b8a8875?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6454594e-c8f9-41c4-801a-db125b8a8875?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video
+Richibucto 2007
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ca7af8ba-8810-4de5-aa91-473613b0b38d?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ca7af8ba-8810-4de5-aa91-473613b0b38d?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video Canso
+2007
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+Jake is working on basic metadata to move this
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/07edd584-2d5c-4278-9147-8386b9385bee?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/07edd584-2d5c-4278-9147-8386b9385bee?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video
+Tabusintac 2008
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d1c58bc6-69d4-47b2-bb19-988f88233900?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d1c58bc6-69d4-47b2-bb19-988f88233900?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video Cocagne
+2008
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/431c815e-65f0-477b-9389-060fa41ec955?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/431c815e-65f0-477b-9389-060fa41ec955?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessments of Eelgrass Beds Using Sidescan and Video
+Bouctouche
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Habitat in Bras dOr Lake
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Parent record / Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b9aca751-2ee6-4e3c-9241-d21914dc4eed" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b9aca751-2ee6-4e3c-9241-d21914dc4eed</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Habitat in Bras dOr Lake - River Denys 2005-2009
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/aa5c0710-3b94-49e7-99df-67522d054fc5?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/aa5c0710-3b94-49e7-99df-67522d054fc5?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Habitat in Bras dOr Lake - Wagmatcook 2007
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/53cc3681-6026-4fbb-af75-a225ac905caf?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/53cc3681-6026-4fbb-af75-a225ac905caf?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Habitat in Bras dOr Lake - Whycocmagh 2007
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e94742d9-465f-4564-be91-5aa3c7f84964?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e94742d9-465f-4564-be91-5aa3c7f84964?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Nearshore Habitat in Bras dOr Lake - Malagawash
+2007 -2008
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/db58d599-20e2-4bae-a591-01507e3f75dd?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/db58d599-20e2-4bae-a591-01507e3f75dd?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Nearshore Habitat in Bras dOr Lake - Chapel
+Island 2008
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2bafcc93-ebb8-4cf8-ab30-be45c405adb1?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2bafcc93-ebb8-4cf8-ab30-be45c405adb1?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Nearshore Habitat in Bras dOr Lake - Eskasoni
+2008
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessment of Habitat Sambro 2006 - 2008
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+Currently reviewing data
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0a8cdc3f-901a-40b8-8606-c705c80cc740?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0a8cdc3f-901a-40b8-8606-c705c80cc740?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assesment of Nearshore Habitat in Bras dOr Lake - St.Andrews
+2011
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/023a311a-ece8-4986-80fb-c9cb16ca2d40?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/023a311a-ece8-4986-80fb-c9cb16ca2d40?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bay Scale Assessment of Eelgrass Beds Using Sidescan and Video - Halifax
+Harbour
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9122c3e2-3cfc-45d0-ac36-aecb306130f6" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9122c3e2-3cfc-45d0-ac36-aecb306130f6</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Exploratory Video-Sidescan and Echosounder Survey of Jordans Bay
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/752d277f-8b3e-40c7-b99d-cfa67e69d975" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/752d277f-8b3e-40c7-b99d-cfa67e69d975</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A Novel Video and Acoustic Survey of the Seaweeds of Isle Madame
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ebdd8f91-9131-45f0-8aec-aba9f65e3fae" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ebdd8f91-9131-45f0-8aec-aba9f65e3fae</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Exploratory Video-Sidescan and Echosounder Survey of Welch Cove
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0083e317-8bb5-492a-8348-c021e183f307" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0083e317-8bb5-492a-8348-c021e183f307</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Other Projects
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Delineation of Coral and Sponge Significant Benthic Areas in Eastern
+Canada (2016)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6af357a3-3be1-47d5-9d1f-e4f809c4c903?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6af357a3-3be1-47d5-9d1f-e4f809c4c903?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kernel Density Analyses of Coral and Sponge Catches from Research Vessel
+Survey Data (2016)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NATlocean A resolution ocean model product for the North Atlantic Ocean
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+Infrastructure not adequete
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9572b0fb-3bb5-4324-bec2-513e3c9c30be?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9572b0fb-3bb5-4324-bec2-513e3c9c30be?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sea Surface Temperature
+</td>
+<td style="text-align:left;">
+Delayed
+</td>
+<td style="text-align:left;">
+Infrastructure not adequete
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ce95f349-0932-4f77-94d3-5738283c5702?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ce95f349-0932-4f77-94d3-5738283c5702?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hourly storm surge model data along the coast of British Columbia
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Will be download only.
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/140f1ee6-c1ed-490c-a97a-868704e4ef1d?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/140f1ee6-c1ed-490c-a97a-868704e4ef1d?fromWorkspace=true</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ocean Data Inventory
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BNAM
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Monthly Currents Climatology of the Northwest Atlantic Ocean from BNAM
+model (1990-2015)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Monthly Salinity Climatology of the Northwest Atlantic Ocean from BNAM
+model (1990-2015)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/c44a8574-9f7d-45b7-afda-27802353a04c" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/c44a8574-9f7d-45b7-afda-27802353a04c</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Monthly Temperature Climatology of the Northwest Atlantic Ocean from
+BNAM model (1990-2015)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5577393c-5eb2-4d07-a64e-d2a1b675a242" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5577393c-5eb2-4d07-a64e-d2a1b675a242</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Maritimes Research Vessel Surveys
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MARITIMES RESEARCH VESSEL SURVEYS
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Parent Record
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MARITIMES FALL RESEARCH VESSEL SURVEY
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5f82b379-c1e5-4a02-b825-f34fc645a529" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5f82b379-c1e5-4a02-b825-f34fc645a529</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MARITIMES SPRING RESEARCH VESSEL SURVEY
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fecf045a-95a2-4b69-8a40-818649a62716" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fecf045a-95a2-4b69-8a40-818649a62716</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MARITIMES SUMMER RESEARCH VESSEL SURVEY
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/1366e1f1-e2c8-4905-89ae-e10f1be0a164" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/1366e1f1-e2c8-4905-89ae-e10f1be0a164</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MARITIMES RESEARCH VESSEL SURVEYS
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AIS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Species distribution models and occurrence data for marine invasive
+species hotspot identification
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/1bbd5131-8b34-4245-b999-3b4c4259d74f" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/1bbd5131-8b34-4245-b999-3b4c4259d74f</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FSRS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fishermen and Scientist Research Society (FSRS) Lobster Recruitment Trap
+Project
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/a88f9b4d-b59a-44f6-ae7e-d36550266940" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/a88f9b4d-b59a-44f6-ae7e-d36550266940</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ILTS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Inshore Lobster Trawl Survey (ILTS)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/63ec8816-ac88-4437-ba27-37b51628c29a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/63ec8816-ac88-4437-ba27-37b51628c29a</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Herring
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fecundity of Herring in Divisions 4WX
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e39b1318-c9f7-4686-b5e5-7d838c8ac99a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e39b1318-c9f7-4686-b5e5-7d838c8ac99a</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+German Bank
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+German Bank SDM
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2bb98a09-5daf-42c4-94e8-e5de718b821d" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2bb98a09-5daf-42c4-94e8-e5de718b821d</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+German Bank Benthoscape
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b7f81d4a-2cb6-4393-b35b-e536ec63e834" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b7f81d4a-2cb6-4393-b35b-e536ec63e834</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cetaceans
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Identifying priority areas to enhance monitoring of cetaceans in the
+Northwest Atlantic Ocean
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/c094782e-0d6f-4cc0-b5a3-58908493a433" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/c094782e-0d6f-4cc0-b5a3-58908493a433</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CIVI
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coastal Envronmetal Exposure Layer
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e6405791-c9b9-4246-a5ed-e5cf610075b5" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e6405791-c9b9-4246-a5ed-e5cf610075b5</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CAN-EWLAT
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Canadian Extreme Water Level Adaptation Tool (CAN-EWLAT)
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Adding a map service
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/a3edf193-5c56-4b38-bcc5-c8708c60ce38" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/a3edf193-5c56-4b38-bcc5-c8708c60ce38</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bottlenose Whale
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Northern bottlenose whale important habitat in inter-canyon areas on the
+eastern Scotian Shelf
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9fd7d004-970c-11eb-a2f3-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9fd7d004-970c-11eb-a2f3-1860247f53e3</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Optical
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Optical, chemical, and biological oceanographic conditions on the
+Scotian Shelf and in the eastern Gulf of Maine in 2019
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/498ad021-92af-431c-80c6-bc2781c320f3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/498ad021-92af-431c-80c6-bc2781c320f3</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Oceans
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Offshore Ecological and Human Use Information considered in Marine
+Protected Area Network Design in the Scotian Shelf Bioregion
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2d9cce9a-d634-4b49-879f-87c40c52acf2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2d9cce9a-d634-4b49-879f-87c40c52acf2</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Satellite-derived Chlorophyll Maps of the North Atlantic
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Delayed due to Open Data not liking FTP
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fadc644c-6733-44a3-9275-151df550c23c" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fadc644c-6733-44a3-9275-151df550c23c</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Primary Production Maps of the North Atlantic
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Delayed due to Open Data not liking FTP
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/08ea557c-5fc1-4f31-b0cd-863e614ef1a2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/08ea557c-5fc1-4f31-b0cd-863e614ef1a2</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A substrate classification for the Inshore Scotian Shelf and Bay of
+Fundy, Maritimes Region.
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/f2c493e4-ceaa-11eb-be59-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/f2c493e4-ceaa-11eb-be59-1860247f53e3</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Atlantic salmon rivers of Eastern North America
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Approved for Atlas
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0b7ec95e-5c18-11ec-a6ba-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0b7ec95e-5c18-11ec-a6ba-1860247f53e3</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Estimates of anthropogenic nitrogen loading and eutrophication
+indicators for the Bay of Fundy and Scotian Shelf
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/08746031-1970-4bf6-b6d4-3de2715c8634" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/08746031-1970-4bf6-b6d4-3de2715c8634</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Land use atlas for coastal watersheds in the Maritimes Region
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/85d6c4c2-6683-4d56-adf4-8cacef2676be" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/85d6c4c2-6683-4d56-adf4-8cacef2676be</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Reproductive ecology of Zostera marina L. (eelgrass) across varying
+environmental conditions
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/56cfea6f-aeca-47ed-94ab-c519d9e63c91" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/56cfea6f-aeca-47ed-94ab-c519d9e63c91</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Future hydrographic state of the Scotian Shelf and Gulf of Maine from 23
+CMIP6 Models
+</td>
+<td style="text-align:left;">
+Published
+</td>
+<td style="text-align:left;">
+Completed
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6247bb5a-14b3-461d-9ed3-b42553107bbc" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6247bb5a-14b3-461d-9ed3-b42553107bbc</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CIVI
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+App in progress
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8093510a-3be6-4edd-961f-747f0d2928b2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8093510a-3be6-4edd-961f-747f0d2928b2</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Recreational Shark &amp; Dart Tag Database
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Contacted Warren for metadata
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/4309f1f7-6779-416d-9660-c02f0f99b482" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/4309f1f7-6779-416d-9660-c02f0f99b482</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calanus spp. size and lipid content metrics in North Atlantic, 1977-2019
+</td>
+<td style="text-align:left;">
+In Progress
+</td>
+<td style="text-align:left;">
+Waiting for RDG signatures
+</td>
+<td style="text-align:left;">
+<a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/72e6d3a1-06e7-4f41-acec-e0f1474b555b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/72e6d3a1-06e7-4f41-acec-e0f1474b555b</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
    

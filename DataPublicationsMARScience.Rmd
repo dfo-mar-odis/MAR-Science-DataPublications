@@ -45,11 +45,23 @@ Your Maritimes Region Open Data technician (Brian Bower) and your Division Data 
 # List of Publications
 
 
-```{r}
-#library(readxl)
+```{r echo=FALSE, include=FALSE, cache=FALSE}
+library(readxl)
+library(kableExtra)
 #read_excel('https://086gc.sharepoint.com/sites/MaritimesSpatialPlanning-MAROpenDataLogistics/Shared%20Documents/MAR%20OpenData%20Logistics/OpenData-Publications/MaritimesFGP_InventoryBrianBower_All.xlsx', 'FGP')
+FGPdata <- read_excel('MaritimesFGP_InventoryBrianBower_All.xlsx', sheet = "FGP")
+eGIS <- read_excel('MaritimesFGP_InventoryBrianBower_All.xlsx', sheet = "eGIS")
 ```
 
+## Internal eGIS Data
+```{r }
+kable(eGIS[, 1:3])
+```
+
+## FGP
+```{r }
+kable(FGPdata[, 1:4])
+```
 
 
 
