@@ -1923,7 +1923,7 @@ Division Data Manager can help with the rest!</p>
 <h1>List of Publications</h1>
 <div id="internal-egis-data" class="section level2">
 <h2>Internal eGIS Data</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(eGIS[, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dplyr<span class="sc">::</span><span class="fu">select</span>(eGIS, <span class="fu">c</span>(<span class="st">&quot;eGIS Publication Name&quot;</span>, <span class="st">&quot;REST URL&quot;</span>, <span class="st">&quot;eGIS URL&quot;</span>)))</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -2000,7 +2000,7 @@ Industry Survey Database (ISDB) - Overview (dfo-mpo.gc.ca)
 </div>
 <div id="fgp" class="section level2">
 <h2>FGP</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(FGPdata[, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dplyr<span class="sc">::</span><span class="fu">select</span>(FGPdata, <span class="fu">c</span>(<span class="st">&quot;FGP Records&quot;</span>, <span class="st">&quot;Status&quot;</span>, <span class="st">&quot;Notes&quot;</span>, <span class="st">&quot;FGP URL&quot;</span>, <span class="st">&quot;Open Data URL&quot;</span>, <span class="st">&quot;Year&quot;</span> , <span class="st">&quot;Fiscal Year Published&quot;</span>)))</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -2015,6 +2015,15 @@ Notes
 </th>
 <th style="text-align:left;">
 FGP URL
+</th>
+<th style="text-align:left;">
+Open Data URL
+</th>
+<th style="text-align:left;">
+Year
+</th>
+<th style="text-align:left;">
+Fiscal Year Published
 </th>
 </tr>
 </thead>
@@ -2033,6 +2042,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0c3b25df-f831-43e8-a8ac-336e1467c4fe?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0c3b25df-f831-43e8-a8ac-336e1467c4fe?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/0c3b25df-f831-43e8-a8ac-336e1467c4fe" class="uri">https://open.canada.ca/data/en/dataset/0c3b25df-f831-43e8-a8ac-336e1467c4fe</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2047,6 +2065,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/29dd835b-7c96-4c62-b558-275dfe13cbe9" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/29dd835b-7c96-4c62-b558-275dfe13cbe9</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/29dd835b-7c96-4c62-b558-275dfe13cbe9" class="uri">https://open.canada.ca/data/en/dataset/29dd835b-7c96-4c62-b558-275dfe13cbe9</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2063,6 +2090,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9" class="uri">https://open.canada.ca/data/en/dataset/af2bf6c0-481d-4445-bbc6-7a785d2a9aa9</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2077,6 +2113,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d159ac68-6e46-44b5-a4e9-951880892c63?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d159ac68-6e46-44b5-a4e9-951880892c63?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/d159ac68-6e46-44b5-a4e9-951880892c63" class="uri">https://open.canada.ca/data/en/dataset/d159ac68-6e46-44b5-a4e9-951880892c63</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2093,6 +2138,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7e2f85b3-19eb-4ecf-8557-69c8df1bc084?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7e2f85b3-19eb-4ecf-8557-69c8df1bc084?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/7e2f85b3-19eb-4ecf-8557-69c8df1bc084" class="uri">https://open.canada.ca/data/en/dataset/7e2f85b3-19eb-4ecf-8557-69c8df1bc084</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2106,6 +2160,15 @@ NA
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e027bd70-2de3-4592-b060-ae62e7c5225a?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e027bd70-2de3-4592-b060-ae62e7c5225a?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2122,6 +2185,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/58ea48ab-f052-48ab-9c18-4353e51b8bea?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/58ea48ab-f052-48ab-9c18-4353e51b8bea?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/58ea48ab-f052-48ab-9c18-4353e51b8bea" class="uri">https://open.canada.ca/data/en/dataset/58ea48ab-f052-48ab-9c18-4353e51b8bea</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2137,6 +2209,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5bbc1575-4267-44fa-ae35-ee08cc2af8fb?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5bbc1575-4267-44fa-ae35-ee08cc2af8fb?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/5bbc1575-4267-44fa-ae35-ee08cc2af8fb" class="uri">https://open.canada.ca/data/en/dataset/5bbc1575-4267-44fa-ae35-ee08cc2af8fb</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2150,6 +2231,15 @@ NA
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6078cd1a-bcc1-4166-a983-3acd870f832c?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6078cd1a-bcc1-4166-a983-3acd870f832c?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2165,6 +2255,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/47bf4555-ce3c-492f-a367-a6eab1862970?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/47bf4555-ce3c-492f-a367-a6eab1862970?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/47bf4555-ce3c-492f-a367-a6eab1862970" class="uri">https://open.canada.ca/data/en/dataset/47bf4555-ce3c-492f-a367-a6eab1862970</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2178,6 +2277,15 @@ NA
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/02291151-d580-4c8a-b0d8-3ccb53ac2b20?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/02291151-d580-4c8a-b0d8-3ccb53ac2b20?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2194,6 +2302,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/edb15c7b-d901-46b0-a460-1aca22c013ea?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/edb15c7b-d901-46b0-a460-1aca22c013ea?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/edb15c7b-d901-46b0-a460-1aca22c013ea" class="uri">https://open.canada.ca/data/en/dataset/edb15c7b-d901-46b0-a460-1aca22c013ea</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2208,6 +2325,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/59121e8f-0acc-411a-99cb-54980df10ba6?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/59121e8f-0acc-411a-99cb-54980df10ba6?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/59121e8f-0acc-411a-99cb-54980df10ba6" class="uri">https://open.canada.ca/data/en/dataset/59121e8f-0acc-411a-99cb-54980df10ba6</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2224,6 +2350,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5" class="uri">https://open.canada.ca/data/en/dataset/e73c90ff-0ab6-4257-8d6d-3dfc46fc0dc5</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2237,6 +2372,15 @@ NA
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7527e94a-3428-4948-aeb7-7fbd227d4db2?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7527e94a-3428-4948-aeb7-7fbd227d4db2?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2253,6 +2397,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/436cdf90-9d6b-4784-938b-feec48844a67?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/436cdf90-9d6b-4784-938b-feec48844a67?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/436cdf90-9d6b-4784-938b-feec48844a67" class="uri">https://open.canada.ca/data/en/dataset/436cdf90-9d6b-4784-938b-feec48844a67</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2266,6 +2419,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ded53eaa-bb98-4476-beea-3138372c740b?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ded53eaa-bb98-4476-beea-3138372c740b?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/ded53eaa-bb98-4476-beea-3138372c740b" class="uri">https://open.canada.ca/data/en/dataset/ded53eaa-bb98-4476-beea-3138372c740b</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2281,10 +2443,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/f32ce23d-4a16-4eaa-9648-2f02a98b91af" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/f32ce23d-4a16-4eaa-9648-2f02a98b91af</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/f32ce23d-4a16-4eaa-9648-2f02a98b91af" class="uri">https://open.canada.ca/data/en/dataset/f32ce23d-4a16-4eaa-9648-2f02a98b91af</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Bay Scale Assessments
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2310,6 +2490,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6454594e-c8f9-41c4-801a-db125b8a8875?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6454594e-c8f9-41c4-801a-db125b8a8875?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/6454594e-c8f9-41c4-801a-db125b8a8875" class="uri">https://open.canada.ca/data/en/dataset/6454594e-c8f9-41c4-801a-db125b8a8875</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2324,6 +2513,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ca7af8ba-8810-4de5-aa91-473613b0b38d?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ca7af8ba-8810-4de5-aa91-473613b0b38d?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/ca7af8ba-8810-4de5-aa91-473613b0b38d" class="uri">https://open.canada.ca/data/en/dataset/ca7af8ba-8810-4de5-aa91-473613b0b38d</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2340,6 +2538,15 @@ Jake is working on basic metadata to move this
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/07edd584-2d5c-4278-9147-8386b9385bee?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/07edd584-2d5c-4278-9147-8386b9385bee?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2354,6 +2561,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d1c58bc6-69d4-47b2-bb19-988f88233900?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d1c58bc6-69d4-47b2-bb19-988f88233900?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/d1c58bc6-69d4-47b2-bb19-988f88233900" class="uri">https://open.canada.ca/data/en/dataset/d1c58bc6-69d4-47b2-bb19-988f88233900</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
 </td>
 </tr>
 <tr>
@@ -2370,6 +2586,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/431c815e-65f0-477b-9389-060fa41ec955?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/431c815e-65f0-477b-9389-060fa41ec955?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/431c815e-65f0-477b-9389-060fa41ec955" class="uri">https://open.canada.ca/data/en/dataset/431c815e-65f0-477b-9389-060fa41ec955</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+2019/2020
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2385,6 +2610,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c" class="uri">https://open.canada.ca/data/en/dataset/b4c83cd2-20f2-47d8-8614-08c1c44c9d8c</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2398,6 +2632,15 @@ Parent record / Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b9aca751-2ee6-4e3c-9241-d21914dc4eed" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b9aca751-2ee6-4e3c-9241-d21914dc4eed</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/b9aca751-2ee6-4e3c-9241-d21914dc4eed" class="uri">https://open.canada.ca/data/en/dataset/b9aca751-2ee6-4e3c-9241-d21914dc4eed</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
 </td>
 </tr>
 <tr>
@@ -2413,6 +2656,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/aa5c0710-3b94-49e7-99df-67522d054fc5?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/aa5c0710-3b94-49e7-99df-67522d054fc5?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/aa5c0710-3b94-49e7-99df-67522d054fc5" class="uri">https://open.canada.ca/data/en/dataset/aa5c0710-3b94-49e7-99df-67522d054fc5</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2427,6 +2679,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/53cc3681-6026-4fbb-af75-a225ac905caf?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/53cc3681-6026-4fbb-af75-a225ac905caf?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/53cc3681-6026-4fbb-af75-a225ac905caf" class="uri">https://open.canada.ca/data/en/dataset/53cc3681-6026-4fbb-af75-a225ac905caf</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2440,6 +2701,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e94742d9-465f-4564-be91-5aa3c7f84964?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e94742d9-465f-4564-be91-5aa3c7f84964?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/e94742d9-465f-4564-be91-5aa3c7f84964" class="uri">https://open.canada.ca/data/en/dataset/e94742d9-465f-4564-be91-5aa3c7f84964</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
 </td>
 </tr>
 <tr>
@@ -2456,6 +2726,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/db58d599-20e2-4bae-a591-01507e3f75dd?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/db58d599-20e2-4bae-a591-01507e3f75dd?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/db58d599-20e2-4bae-a591-01507e3f75dd" class="uri">https://open.canada.ca/data/en/dataset/db58d599-20e2-4bae-a591-01507e3f75dd</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2470,6 +2749,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2bafcc93-ebb8-4cf8-ab30-be45c405adb1?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2bafcc93-ebb8-4cf8-ab30-be45c405adb1?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/2bafcc93-ebb8-4cf8-ab30-be45c405adb1" class="uri">https://open.canada.ca/data/en/dataset/2bafcc93-ebb8-4cf8-ab30-be45c405adb1</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
 </td>
 </tr>
 <tr>
@@ -2486,6 +2774,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678" class="uri">https://open.canada.ca/data/en/dataset/d6c5d06d-d9c8-4f0f-93d6-b81a15a05678</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2499,6 +2796,15 @@ Currently reviewing data
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0a8cdc3f-901a-40b8-8606-c705c80cc740?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0a8cdc3f-901a-40b8-8606-c705c80cc740?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2515,6 +2821,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/023a311a-ece8-4986-80fb-c9cb16ca2d40?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/023a311a-ece8-4986-80fb-c9cb16ca2d40?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/023a311a-ece8-4986-80fb-c9cb16ca2d40" class="uri">https://open.canada.ca/data/en/dataset/023a311a-ece8-4986-80fb-c9cb16ca2d40</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2530,6 +2845,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9122c3e2-3cfc-45d0-ac36-aecb306130f6" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9122c3e2-3cfc-45d0-ac36-aecb306130f6</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/9122c3e2-3cfc-45d0-ac36-aecb306130f6" class="uri">https://open.canada.ca/data/en/dataset/9122c3e2-3cfc-45d0-ac36-aecb306130f6</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2021/2022
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2543,6 +2867,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/752d277f-8b3e-40c7-b99d-cfa67e69d975" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/752d277f-8b3e-40c7-b99d-cfa67e69d975</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/752d277f-8b3e-40c7-b99d-cfa67e69d975" class="uri">https://open.canada.ca/data/en/dataset/752d277f-8b3e-40c7-b99d-cfa67e69d975</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2021/2022
 </td>
 </tr>
 <tr>
@@ -2558,6 +2891,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ebdd8f91-9131-45f0-8aec-aba9f65e3fae" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ebdd8f91-9131-45f0-8aec-aba9f65e3fae</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/ebdd8f91-9131-45f0-8aec-aba9f65e3fae" class="uri">https://open.canada.ca/data/en/dataset/ebdd8f91-9131-45f0-8aec-aba9f65e3fae</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2021/2022
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2572,10 +2914,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0083e317-8bb5-492a-8348-c021e183f307" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0083e317-8bb5-492a-8348-c021e183f307</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/0083e317-8bb5-492a-8348-c021e183f307" class="uri">https://open.canada.ca/data/en/dataset/0083e317-8bb5-492a-8348-c021e183f307</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2021/2022
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Other Projects
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2601,6 +2961,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6af357a3-3be1-47d5-9d1f-e4f809c4c903?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6af357a3-3be1-47d5-9d1f-e4f809c4c903?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/6af357a3-3be1-47d5-9d1f-e4f809c4c903" class="uri">https://open.canada.ca/data/en/dataset/6af357a3-3be1-47d5-9d1f-e4f809c4c903</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2616,6 +2985,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f" class="uri">https://open.canada.ca/data/en/dataset/fb1d1c3d-ba6e-4d0d-b629-f4f497edc10f</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2629,6 +3007,15 @@ Infrastructure not adequete
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9572b0fb-3bb5-4324-bec2-513e3c9c30be?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9572b0fb-3bb5-4324-bec2-513e3c9c30be?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2644,6 +3031,15 @@ Infrastructure not adequete
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/ce95f349-0932-4f77-94d3-5738283c5702?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/ce95f349-0932-4f77-94d3-5738283c5702?fromWorkspace=true</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2657,6 +3053,15 @@ Will be download only.
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/140f1ee6-c1ed-490c-a97a-868704e4ef1d?fromWorkspace=true" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/140f1ee6-c1ed-490c-a97a-868704e4ef1d?fromWorkspace=true</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/" class="uri">https://open.canada.ca/data/en/dataset/</a>
+</td>
+<td style="text-align:left;">
+N/A
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -2672,38 +3077,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/7da1f04f-49b0-4208-a49e-d0597b1f55c6" class="uri">https://open.canada.ca/data/en/dataset/7da1f04f-49b0-4208-a49e-d0597b1f55c6</a>
 </td>
 <td style="text-align:left;">
-NA
+2019
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2019/2020
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 BNAM
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2729,6 +3124,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a" class="uri">https://open.canada.ca/data/en/dataset/dd5ef0d6-d588-4f4f-99e5-27c4bdfddf6a</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2743,6 +3147,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/c44a8574-9f7d-45b7-afda-27802353a04c" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/c44a8574-9f7d-45b7-afda-27802353a04c</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/c44a8574-9f7d-45b7-afda-27802353a04c" class="uri">https://open.canada.ca/data/en/dataset/c44a8574-9f7d-45b7-afda-27802353a04c</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
 </td>
 </tr>
 <tr>
@@ -2759,24 +3172,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5577393c-5eb2-4d07-a64e-d2a1b675a242" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5577393c-5eb2-4d07-a64e-d2a1b675a242</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/5577393c-5eb2-4d07-a64e-d2a1b675a242" class="uri">https://open.canada.ca/data/en/dataset/5577393c-5eb2-4d07-a64e-d2a1b675a242</a>
 </td>
 <td style="text-align:left;">
-NA
+2020
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Maritimes Research Vessel Surveys
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2801,6 +3218,15 @@ Parent Record
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://open.canada.ca/data/en/dataset/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2814,6 +3240,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/5f82b379-c1e5-4a02-b825-f34fc645a529" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/5f82b379-c1e5-4a02-b825-f34fc645a529</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/5f82b379-c1e5-4a02-b825-f34fc645a529" class="uri">https://open.canada.ca/data/en/dataset/5f82b379-c1e5-4a02-b825-f34fc645a529</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2020/2021
 </td>
 </tr>
 <tr>
@@ -2829,6 +3264,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fecf045a-95a2-4b69-8a40-818649a62716" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fecf045a-95a2-4b69-8a40-818649a62716</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/fecf045a-95a2-4b69-8a40-818649a62716" class="uri">https://open.canada.ca/data/en/dataset/fecf045a-95a2-4b69-8a40-818649a62716</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -2842,6 +3286,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/1366e1f1-e2c8-4905-89ae-e10f1be0a164" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/1366e1f1-e2c8-4905-89ae-e10f1be0a164</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/1366e1f1-e2c8-4905-89ae-e10f1be0a164" class="uri">https://open.canada.ca/data/en/dataset/1366e1f1-e2c8-4905-89ae-e10f1be0a164</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2020/2021
 </td>
 </tr>
 <tr>
@@ -2857,24 +3310,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/8ddcaeea-b806-4958-a79f-ba9ab645f53b" class="uri">https://open.canada.ca/data/en/dataset/8ddcaeea-b806-4958-a79f-ba9ab645f53b</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 AIS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2900,24 +3357,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/1bbd5131-8b34-4245-b999-3b4c4259d74f" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/1bbd5131-8b34-4245-b999-3b4c4259d74f</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/1bbd5131-8b34-4245-b999-3b4c4259d74f" class="uri">https://open.canada.ca/data/en/dataset/1bbd5131-8b34-4245-b999-3b4c4259d74f</a>
 </td>
 <td style="text-align:left;">
-NA
+2020
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 FSRS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2943,24 +3404,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/a88f9b4d-b59a-44f6-ae7e-d36550266940" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/a88f9b4d-b59a-44f6-ae7e-d36550266940</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/a88f9b4d-b59a-44f6-ae7e-d36550266940" class="uri">https://open.canada.ca/data/en/dataset/a88f9b4d-b59a-44f6-ae7e-d36550266940</a>
 </td>
 <td style="text-align:left;">
-NA
+2020
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ILTS
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -2985,24 +3450,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/63ec8816-ac88-4437-ba27-37b51628c29a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/63ec8816-ac88-4437-ba27-37b51628c29a</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/63ec8816-ac88-4437-ba27-37b51628c29a" class="uri">https://open.canada.ca/data/en/dataset/63ec8816-ac88-4437-ba27-37b51628c29a</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Herring
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3027,24 +3496,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e39b1318-c9f7-4686-b5e5-7d838c8ac99a" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e39b1318-c9f7-4686-b5e5-7d838c8ac99a</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/e39b1318-c9f7-4686-b5e5-7d838c8ac99a" class="uri">https://open.canada.ca/data/en/dataset/e39b1318-c9f7-4686-b5e5-7d838c8ac99a</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 German Bank
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3069,6 +3542,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2bb98a09-5daf-42c4-94e8-e5de718b821d" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2bb98a09-5daf-42c4-94e8-e5de718b821d</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/2bb98a09-5daf-42c4-94e8-e5de718b821d" class="uri">https://open.canada.ca/data/en/dataset/2bb98a09-5daf-42c4-94e8-e5de718b821d</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3083,10 +3565,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b7f81d4a-2cb6-4393-b35b-e536ec63e834" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b7f81d4a-2cb6-4393-b35b-e536ec63e834</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/b7f81d4a-2cb6-4393-b35b-e536ec63e834" class="uri">https://open.canada.ca/data/en/dataset/b7f81d4a-2cb6-4393-b35b-e536ec63e834</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2020/2021
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Cetaceans
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3112,24 +3612,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/c094782e-0d6f-4cc0-b5a3-58908493a433" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/c094782e-0d6f-4cc0-b5a3-58908493a433</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/c094782e-0d6f-4cc0-b5a3-58908493a433" class="uri">https://open.canada.ca/data/en/dataset/c094782e-0d6f-4cc0-b5a3-58908493a433</a>
 </td>
 <td style="text-align:left;">
-NA
+2020
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2020/2021
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 CIVI
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3154,24 +3658,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e6405791-c9b9-4246-a5ed-e5cf610075b5" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/e6405791-c9b9-4246-a5ed-e5cf610075b5</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/e6405791-c9b9-4246-a5ed-e5cf610075b5" class="uri">https://open.canada.ca/data/en/dataset/e6405791-c9b9-4246-a5ed-e5cf610075b5</a>
 </td>
 <td style="text-align:left;">
-NA
+2022
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2022/2023
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 CAN-EWLAT
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3196,24 +3704,28 @@ Adding a map service
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/a3edf193-5c56-4b38-bcc5-c8708c60ce38" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/a3edf193-5c56-4b38-bcc5-c8708c60ce38</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/a3edf193-5c56-4b38-bcc5-c8708c60ce38" class="uri">https://open.canada.ca/data/en/dataset/a3edf193-5c56-4b38-bcc5-c8708c60ce38</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Bottlenose Whale
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3239,24 +3751,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/9fd7d004-970c-11eb-a2f3-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/9fd7d004-970c-11eb-a2f3-1860247f53e3</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/9fd7d004-970c-11eb-a2f3-1860247f53e3" class="uri">https://open.canada.ca/data/en/dataset/9fd7d004-970c-11eb-a2f3-1860247f53e3</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Optical
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3282,24 +3798,28 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/498ad021-92af-431c-80c6-bc2781c320f3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/498ad021-92af-431c-80c6-bc2781c320f3</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/498ad021-92af-431c-80c6-bc2781c320f3" class="uri">https://open.canada.ca/data/en/dataset/498ad021-92af-431c-80c6-bc2781c320f3</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Oceans
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 <td style="text-align:left;">
 NA
@@ -3325,19 +3845,14 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/2d9cce9a-d634-4b49-879f-87c40c52acf2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/2d9cce9a-d634-4b49-879f-87c40c52acf2</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/2d9cce9a-d634-4b49-879f-87c40c52acf2" class="uri">https://open.canada.ca/data/en/dataset/2d9cce9a-d634-4b49-879f-87c40c52acf2</a>
 </td>
 <td style="text-align:left;">
-NA
+2022
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
@@ -3353,6 +3868,15 @@ Delayed due to Open Data not liking FTP
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/fadc644c-6733-44a3-9275-151df550c23c" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/fadc644c-6733-44a3-9275-151df550c23c</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/fadc644c-6733-44a3-9275-151df550c23c" class="uri">https://open.canada.ca/data/en/dataset/fadc644c-6733-44a3-9275-151df550c23c</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+2021/2022
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3367,33 +3891,14 @@ Delayed due to Open Data not liking FTP
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/08ea557c-5fc1-4f31-b0cd-863e614ef1a2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/08ea557c-5fc1-4f31-b0cd-863e614ef1a2</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/08ea557c-5fc1-4f31-b0cd-863e614ef1a2" class="uri">https://open.canada.ca/data/en/dataset/08ea557c-5fc1-4f31-b0cd-863e614ef1a2</a>
 </td>
 <td style="text-align:left;">
-NA
+2021
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
@@ -3410,19 +3915,14 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/f2c493e4-ceaa-11eb-be59-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/f2c493e4-ceaa-11eb-be59-1860247f53e3</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/f2c493e4-ceaa-11eb-be59-1860247f53e3" class="uri">https://open.canada.ca/data/en/dataset/f2c493e4-ceaa-11eb-be59-1860247f53e3</a>
 </td>
 <td style="text-align:left;">
-NA
+2022
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2021/2022
 </td>
 </tr>
 <tr>
@@ -3437,6 +3937,15 @@ Approved for Atlas
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/0b7ec95e-5c18-11ec-a6ba-1860247f53e3" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/0b7ec95e-5c18-11ec-a6ba-1860247f53e3</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2021/2022
 </td>
 </tr>
 <tr>
@@ -3453,6 +3962,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/08746031-1970-4bf6-b6d4-3de2715c8634" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/08746031-1970-4bf6-b6d4-3de2715c8634</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/08746031-1970-4bf6-b6d4-3de2715c8634" class="uri">https://open.canada.ca/data/en/dataset/08746031-1970-4bf6-b6d4-3de2715c8634</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2021/2022
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3466,6 +3984,15 @@ Completed
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/85d6c4c2-6683-4d56-adf4-8cacef2676be" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/85d6c4c2-6683-4d56-adf4-8cacef2676be</a>
+</td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/85d6c4c2-6683-4d56-adf4-8cacef2676be" class="uri">https://open.canada.ca/data/en/dataset/85d6c4c2-6683-4d56-adf4-8cacef2676be</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
 </td>
 </tr>
 <tr>
@@ -3482,6 +4009,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/56cfea6f-aeca-47ed-94ab-c519d9e63c91" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/56cfea6f-aeca-47ed-94ab-c519d9e63c91</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/56cfea6f-aeca-47ed-94ab-c519d9e63c91" class="uri">https://open.canada.ca/data/en/dataset/56cfea6f-aeca-47ed-94ab-c519d9e63c91</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3497,6 +4033,15 @@ Completed
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/6247bb5a-14b3-461d-9ed3-b42553107bbc" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/6247bb5a-14b3-461d-9ed3-b42553107bbc</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/6247bb5a-14b3-461d-9ed3-b42553107bbc" class="uri">https://open.canada.ca/data/en/dataset/6247bb5a-14b3-461d-9ed3-b42553107bbc</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3510,6 +4055,15 @@ App in progress
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8093510a-3be6-4edd-961f-747f0d2928b2" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/8093510a-3be6-4edd-961f-747f0d2928b2</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 <tr>
@@ -3525,6 +4079,15 @@ Metadata out for translation
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/4309f1f7-6779-416d-9660-c02f0f99b482" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/4309f1f7-6779-416d-9660-c02f0f99b482</a>
 </td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3539,19 +4102,14 @@ Submitted - Delayed due to CDO and RCC issues
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/72e6d3a1-06e7-4f41-acec-e0f1474b555b" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/72e6d3a1-06e7-4f41-acec-e0f1474b555b</a>
 </td>
-</tr>
-<tr>
 <td style="text-align:left;">
-NA
+<a href="https://open.canada.ca/data/en/dataset/72e6d3a1-06e7-4f41-acec-e0f1474b555b" class="uri">https://open.canada.ca/data/en/dataset/72e6d3a1-06e7-4f41-acec-e0f1474b555b</a>
 </td>
 <td style="text-align:left;">
-NA
+2022
 </td>
 <td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
+2022/2023
 </td>
 </tr>
 <tr>
@@ -3568,6 +4126,15 @@ Creating translation document - Delayed due to CDO and RCC issues
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b7bcff18-698b-4d40-a7bd-13d39925cbeb" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b7bcff18-698b-4d40-a7bd-13d39925cbeb</a>
 </td>
+<td style="text-align:left;">
+<a href="https://open.canada.ca/data/en/dataset/b7bcff18-698b-4d40-a7bd-13d39925cbeb" class="uri">https://open.canada.ca/data/en/dataset/b7bcff18-698b-4d40-a7bd-13d39925cbeb</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+2022/2023
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3583,6 +4150,15 @@ NA
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/326bfc06-4b48-408f-9a74-1e118665e7b0" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/326bfc06-4b48-408f-9a74-1e118665e7b0</a>
 </td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -3597,6 +4173,15 @@ NA
 </td>
 <td style="text-align:left;">
 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/b6567b77-4fda-4fcf-b059-fcfeb4dcc2fb" class="uri">https://gcgeo.gc.ca/geonetwork/metadata/eng/b6567b77-4fda-4fcf-b059-fcfeb4dcc2fb</a>
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
 </td>
 </tr>
 </tbody>

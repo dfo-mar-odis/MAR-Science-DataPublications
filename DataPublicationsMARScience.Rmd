@@ -48,19 +48,23 @@ Your Maritimes Region Open Data technician (Brian Bower) and your Division Data 
 ```{r echo=FALSE, include=FALSE, cache=FALSE}
 library(readxl)
 library(kableExtra)
-#read_excel('https://086gc.sharepoint.com/sites/MaritimesSpatialPlanning-MAROpenDataLogistics/Shared%20Documents/MAR%20OpenData%20Logistics/OpenData-Publications/MaritimesFGP_InventoryBrianBower_All.xlsx', 'FGP')
+library(dplyr)
+
+eGIS <- read_excel('MaritimesFGP_InventoryBrianBower_All.xlsx', sheet = "eGIS") 
+
 FGPdata <- read_excel('MaritimesFGP_InventoryBrianBower_All.xlsx', sheet = "FGP")
-eGIS <- read_excel('MaritimesFGP_InventoryBrianBower_All.xlsx', sheet = "eGIS")
+FGPdata <- dplyr::filter(FGPdata, !is.na(FGPdata$`FGP Records`))
+
 ```
 
 ## Internal eGIS Data
 ```{r }
-kable(eGIS[, 1:3])
+kable(dplyr::select(eGIS, c("eGIS Publication Name", "REST URL", "eGIS URL")))
 ```
 
 ## FGP
 ```{r }
-kable(FGPdata[, 1:4])
+kable(dplyr::select(FGPdata, c("FGP Records", "Status", "Notes", "FGP URL", "Open Data URL", "Year" , "Fiscal Year Published")))
 ```
 
 
