@@ -68,8 +68,9 @@ kable(dplyr::select(FGPdata, c("FGP Records", "Status", "Notes", "FGP URL", "Ope
 ```
 
 
-
-
+```{undefined eval=FALSE, include=FALSE}
+# barplot(table(FGPdata$Year))
+```
 
 
 
